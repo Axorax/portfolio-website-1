@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@200&family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #161616;
+}
+
+br {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#polygon {
+  font-family: "M PLUS Code Latin", sans-serif;
+  color: white;
+  background-image: url(../img/polygon-background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#w {
+  user-select: none;
+  height: auto;
+  max-width: 100%;
+  width: 100vw;
+  border-style: none;
+}
+
+#w-e {
+  user-select: none;
+  height: 15vw;
+  max-width: 100%;
+  width: 100vw;
+  border-style: none;
+  margin-bottom: -8px;
+  position: relative;
+}
+
+#circle {
+  background-image: url("../img/circle.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -1%;
+}
+
+#copyright-main {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.logo::before {
+  content: "";
+  background-image: url(../img/axorax.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-color: hsl(0, 0%, 20%, 0.6);
+  bottom: 0;
+  left: -50%;
+  border-radius: 35%;
+  animation: waves 5s ease-in-out alternate infinite;
+}
+
+@keyframes waves {
+  to {
+    transform: translateY(-50%) rotate(540deg);
+  }
+}
+
+#nav-bar {
+  color: white;
+  font-size: 40px;
+  margin-right: 2%;
+  float: right;
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+#nav-bar:hover {
+  animation: nav-rotate 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes nav-rotate {
+  from {
+    opacity: 0.7;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  75% {
+    color: #0092ff;
+  }
+  100% {
+    color: #00ff55;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ebdff8;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #ff9f54;
+  border-radius: 50px;
+}
+.width-equal {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+#text-1 {
+  margin-left: -70px;
+  margin-bottom: 0;
+}
+
+#hero-name {
+  background-image: url(../img/wave.gif);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bolder;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.bracket-text {
+  font-weight: bold;
+  color: #ffeeb1;
+}
+
+.typing {
+  color: #3c90ff;
+}
+
+#socials-name {
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffb470;
+  text-transform: uppercase;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#connect {
+  text-align: center;
+  color: white;
+}
+
+.socials {
+  text-align: center;
+  margin-top: 4%;
+}
+
+#social-github,
+#social-youtube,
+#social-itch {
+  border: none;
+  background-color: transparent;
+  font-size: 50px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+#social-github {
+  color: white;
+}
+#social-youtube {
+  color: #fd2626;
+}
+#social-itch {
+  color: #fe2448;
+}
+
+#social-github:hover,
+#social-youtube:hover,
+#social-itch:hover {
+  transform: translateY(-10px);
+}
+
+#share {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  line-height: 0;
+  display: inline;
+  padding: 10px;
+}
+#sh {
+  text-align: center;
+  margin-top: 50px;
+}
+#share-btn {
+  text-align: center;
+  display: inline;
+}
+#copy-button {
+  border: none;
+  border-radius: 100%;
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+  background-color: black;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+.nav-text {
+  color: white;
+  float: left;
+  padding: 0px 17px;
+  margin-top: 18px;
+}
+
+.nav-img {
+  height: 50px;
+  width: 60px;
+  padding-left: 10px;
+  float: left;
+  margin-top: 8px;
+}
+
+/* Contact Me Webpage */
+.contact-form {
+  margin-left: 15px;
+}
+.contact-header {
+  color: wheat;
+  margin-left: 15px;
+}
+#contact-name {
+  color: black;
+  border-radius: 2px solid white;
+  width: 70vw;
+  border-radius: 5px;
+  height: 35px;
+  border: 2px solid gainsboro;
+}
+#contact-name:focus {
+  outline: none;
+  border: 3px solid lightskyblue;
+}
+#contact-description {
+  width: 70vw;
+  height: 100px;
+  background-color: white;
+  border-radius: 5px;
+}
+#contact-description:focus {
+  outline: none;
+  border: 3px solid lightskyblue;
+}
+.contact-top {
+  width: 29.5vw;
+  color: black;
+  border-radius: 2px solid white;
+  border-radius: 5px;
+  height: 35px;
+  border: 2px solid gainsboro;
+}
+.contact-top:focus {
+  outline: none;
+  border: 3px solid lightskyblue;
+}
+.contact-pc {
+  display: flex;
+  word-wrap: normal;
+}
+.contact-mobile-space {
+  display: none;
+}
+@media screen and (max-width: 1254px) {
+  .contact-top {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 645px) {
+  .contact-top {
+    width: 60vw;
+  }
+  .contact-pc {
+    display: block;
+    word-wrap: none;
+  }
+  .contact-mobile-space {
+    display: block;
+  }
+}
+.contact-success-bottom-links {
+  color: #646464;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.contact-success-bottom-links:focus {
+  color: rgb(148, 148, 148);
+  background: transparent;
+}
+.contact-success-privacy {
+  display: none;
+}
+.contact-submit {
+  border: none;
+  margin-top: 20px;
+  height: 40px;
+  width: 150px;
+  border-radius: 7px;
+  color: black;
+  font-size: 20px;
+  background: #b4fe98;
+  border-bottom: 5px solid #75c459;
+  cursor: pointer;
+}
+.contact-submit:hover {
+  transform: translateY(3%);
+  border-bottom: 2px solid #75c459;
+}
+.contact-submit:focus {
+  background: #b4fe98;
+}
+
+/* Resources
+font-family: 'M PLUS Code Latin', sans-serif;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+#161616;
+*/
