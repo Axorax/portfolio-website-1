@@ -137,39 +137,32 @@
     ></a>
     <br /><br /><br /><!-- Nav End-->
 
-    <h3 class="contact-header">Contact Me!</h3>
-
     <form action="" method="POST" class="contact-form">
-      <div class="contact-pc">
-        <label style="color: white; font-size: 17px">Name &nbsp; </label><br />
+        <label>Name &nbsp; </label><br />
         <input
           type="text"
-          class="browser-default contact-top"
+          class="browser-default contact-input"
           spellcheck="false"
           name="name"
           placeholder=" Your name here..."
           required
-        />
-        &nbsp; &nbsp; &nbsp; &nbsp;
-        <span class="contact-mobile-space"><br /></span>
-        <label style="color: white; font-size: 17px">E-mail &nbsp; </label
+        /><br /><br />
+        <label>E-mail &nbsp; </label
         ><br />
         <input
           type="text"
-          class="browser-default contact-top"
+          class="browser-default contact-input"
           spellcheck="false"
           name="email"
           placeholder=" Your e-mail here..."
           required
-        />
-      </div>
+        /><br />
       <br />
       <div>
-        <label style="color: white; font-size: 17px">Subject </label><br />
+        <label>Subject </label><br />
         <input
           type="text"
-          id="contact-name"
-          class="browser-default"
+          class="browser-default contact-input"
           spellcheck="false"
           name="subject"
           placeholder=" Subject here"
@@ -177,11 +170,11 @@
       </div>
       <br />
       <div>
-        <label style="color: white; font-size: 17px">Message</label><br />
+        <label>Message</label><br />
         <textarea
           name="Description"
-          id="contact-description"
           name="message"
+          class="contact-input textarea"
           placeholder="Message here..."
           required
         ></textarea>
@@ -189,10 +182,9 @@
       <div>
         <button type="submit" class="contact-submit">Submit</button>
       </div>
-      <br />
-      <p>
+      <p style="margin-top:17px;margin-bottom: .8rem;padding:0;">
         <span style="color: white">Or,</span>
-        <a href="">Send an email from mail app.</a>
+        <a href="mailto:axoraxmail@gmail.com">Send an email from mail app.</a>
       </p>
     </form>
 

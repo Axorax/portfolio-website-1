@@ -12,16 +12,3 @@ function copy() {
   navigator.clipboard.writeText(copyText);
   alert("Copied : " + copyText);
 }
-
-// Contact Bottom Links
-function contactSuccessPrivacyActive() {
-  const button = document.querySelector("#contact-success-bottom-btn-privacy");
-  const privacy = document.querySelector(".contact-success-privacy");
-  button.addEventListener("click", () => {
-    if (privacy.style.display === "block") {
-      privacy.style.display = "none";
-    } else {
-      privacy.style.display = "block";
-    }
-  });
-}
